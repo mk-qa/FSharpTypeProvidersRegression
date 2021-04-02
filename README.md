@@ -15,7 +15,7 @@ POSTGRESQL server should be installed (for SQLTypeProviderCore) <br />
    EXPECTED: 
      - There are no errors/redcode in the compatible projects
      - There are errors/redcode for type providers in the incompatible projects
-4. Set VS MSBuild in `File | Settings | Build, Execution, Deployment | Toolset and Build`
+4. Set VS MSBuild in `File | Settings | Build, Execution, Deployment | Toolset and Build` <br />
    EXPECTED:
      - There are no errors/redcode in the incompatible projects
 5. Open and build NotificationChannelsFs projects (Make sure that VS MSBuild is selected)<br />
