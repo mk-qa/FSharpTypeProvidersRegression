@@ -17,16 +17,14 @@ POSTGRESQL server should be installed (for SQLTypeProviderCore) <br />
      - There are errors/redcode for type providers in the incompatible projects
      - TestCSharp - build failed (has reference to an incompatible project)
 4. Set VS MSBuild in `File | Settings | Build, Execution, Deployment | Toolset and Build`
-5. Reload projects <br />
    EXPECTED:
      - There are no errors/redcode in the incompatible projects
-     - TestCSharp - build succeeded
-8. Open and build NotificationChannelsFs projects (Make sure that VS MSBuild is selected)<br />
+5. Open and build NotificationChannelsFs projects (Make sure that VS MSBuild is selected)<br />
    EXPECTED:
      - There are no errors/redcode, build succeeded
-9. Open Test1.fsx/Test2.fsx/Test3.fsx scripts from SupportSharpR project<br />
+6. Open Test1.fsx/Test2.fsx/Test3.fsx scripts from SupportSharpR project<br />
    EXPECTED:
      - There are no errors/redcode
-10. Open UnitTest1.cs from TestCSharpWithFSharp project<br />
+7. Open UnitTest1.cs from TestCSharpWithFSharp project<br />
     EXPECTED:
      - There are no errors/redcode
