@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net5.0</TargetFramework>
+        <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Compile Include="POSTGRESQL.fs" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="BCrypt.Net-Next.StrongName" Version="4.0.2" />
+      <PackageReference Include="FSharp.Control.AsyncSeq" Version="3.0.3" />
+      <PackageReference Include="Npgsql" Version="6.0.0-preview2" />
+      <PackageReference Include="SQLProvider" Version="1.2.1" />
+    </ItemGroup>
+
+</Project>

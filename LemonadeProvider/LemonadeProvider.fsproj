@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net5.0</TargetFramework>
+        <AssemblyName>LemonadeProvider</AssemblyName>
+        <RootNamespace>LemonadeProvider</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Compile Include="Lemonade.fs" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="FSharp.Data" Version="3.3.3" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Reference Include="LemonadeProvider.DesignTime, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <HintPath>..\LemonadeProvider.DesignTime.dll</HintPath>
+      </Reference>
+    </ItemGroup>
+
+</Project>

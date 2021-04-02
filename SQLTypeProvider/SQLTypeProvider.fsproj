@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+        <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Compile Include="MSSQL.fs" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.Data.SqlClient" Version="3.0.0-preview1.21075.2" />
+      <PackageReference Include="System.Data.SqlClient" Version="4.8.0" />
+      <PackageReference Include="FSharp.Control.AsyncSeq" Version="3.0.3" />
+      <PackageReference Include="Npgsql" Version="5.0.3" />
+      <PackageReference Include="SQLProvider" Version="1.2.1" />
+      <PackageReference Include="TaskBuilder.fs" Version="2.2.0-alpha" />
+    </ItemGroup>
+
+</Project>

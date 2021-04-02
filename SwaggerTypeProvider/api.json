@@ -1,0 +1,341 @@
+﻿{
+  "swagger": "2.0",
+  "info": {
+    "version": "v1",
+    "title": "Courses API"
+  },
+  "paths": {
+    "/api/Courses": {
+      "get": {
+        "tags": [
+          "Courses"
+        ],
+        "operationId": "ApiCoursesGet",
+        "consumes": [],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "uniqueItems": false,
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/CourseViewModel"
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Courses"
+        ],
+        "operationId": "ApiCoursesPost",
+        "consumes": [
+          "application/json-patch+json",
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "produces": [],
+        "parameters": [
+          {
+            "name": "courseViewModel",
+            "in": "body",
+            "required": false,
+            "schema": {
+              "$ref": "#/definitions/CreateCourseViewModel"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Courses/{courseId}": {
+      "get": {
+        "tags": [
+          "Courses"
+        ],
+        "operationId": "ApiCoursesByCourseIdGet",
+        "consumes": [],
+        "produces": [],
+        "parameters": [
+          {
+            "name": "courseId",
+            "in": "path",
+            "required": true,
+            "type": "integer",
+            "format": "int64"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Courses"
+        ],
+        "operationId": "ApiCoursesByCourseIdDelete",
+        "consumes": [],
+        "produces": [],
+        "parameters": [
+          {
+            "name": "courseId",
+            "in": "path",
+            "required": true,
+            "type": "integer",
+            "format": "int64"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Courses/update/{courseId}": {
+      "post": {
+        "tags": [
+          "Courses"
+        ],
+        "operationId": "ApiCoursesUpdateByCourseIdPost",
+        "consumes": [
+          "application/json-patch+json",
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "produces": [],
+        "parameters": [
+          {
+            "name": "courseId",
+            "in": "path",
+            "required": true,
+            "type": "integer",
+            "format": "int64"
+          },
+          {
+            "name": "courseViewModel",
+            "in": "body",
+            "required": false,
+            "schema": {
+              "$ref": "#/definitions/UpdateCourseViewModel"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Courses/sign_in_course/{courseId}": {
+      "post": {
+        "tags": [
+          "Courses"
+        ],
+        "operationId": "ApiCoursesSign_in_courseByCourseIdPost",
+        "consumes": [],
+        "produces": [],
+        "parameters": [
+          {
+            "name": "courseId",
+            "in": "path",
+            "required": true,
+            "type": "integer",
+            "format": "int64"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Courses/accept_student/{courseId}": {
+      "post": {
+        "tags": [
+          "Courses"
+        ],
+        "operationId": "ApiCoursesAccept_studentByCourseIdPost",
+        "consumes": [],
+        "produces": [],
+        "parameters": [
+          {
+            "name": "courseId",
+            "in": "path",
+            "required": true,
+            "type": "integer",
+            "format": "int64"
+          },
+          {
+            "name": "studentId",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Courses/reject_student/{courseId}": {
+      "post": {
+        "tags": [
+          "Courses"
+        ],
+        "operationId": "ApiCoursesReject_studentByCourseIdPost",
+        "consumes": [],
+        "produces": [],
+        "parameters": [
+          {
+            "name": "courseId",
+            "in": "path",
+            "required": true,
+            "type": "integer",
+            "format": "int64"
+          },
+          {
+            "name": "studentId",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Courses/user_courses/{userId}": {
+      "get": {
+        "tags": [
+          "Courses"
+        ],
+        "operationId": "ApiCoursesUser_coursesByUserIdGet",
+        "consumes": [],
+        "produces": [],
+        "parameters": [
+          {
+            "name": "userId",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "CourseViewModel": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "format": "int64",
+          "type": "integer"
+        },
+        "name": {
+          "type": "string"
+        },
+        "groupName": {
+          "type": "string"
+        },
+        "isOpen": {
+          "type": "boolean"
+        },
+        "isComplete": {
+          "type": "boolean"
+        },
+        "mentorId": {
+          "type": "string"
+        },
+        "courseMates": {
+          "uniqueItems": false,
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/CourseMateViewModel"
+          }
+        }
+      }
+    },
+    "CourseMateViewModel": {
+      "type": "object",
+      "properties": {
+        "studentId": {
+          "type": "string"
+        },
+        "isAccepted": {
+          "type": "boolean"
+        }
+      }
+    },
+    "CreateCourseViewModel": {
+      "required": [
+        "name",
+        "groupName",
+        "isOpen"
+      ],
+      "type": "object",
+      "properties": {
+        "name": {
+          "pattern": "^\\S+.*",
+          "type": "string"
+        },
+        "groupName": {
+          "type": "string"
+        },
+        "isOpen": {
+          "type": "boolean"
+        }
+      }
+    },
+    "UpdateCourseViewModel": {
+      "required": [
+        "name",
+        "groupName",
+        "isOpen"
+      ],
+      "type": "object",
+      "properties": {
+        "name": {
+          "pattern": "^\\S+.*",
+          "type": "string"
+        },
+        "groupName": {
+          "type": "string"
+        },
+        "isOpen": {
+          "type": "boolean"
+        },
+        "isComplete": {
+          "type": "boolean"
+        }
+      }
+    }
+  }
+}

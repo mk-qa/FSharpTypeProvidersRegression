@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net5.0</TargetFramework>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+        <RootNamespace>SupportNuget</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <None Include="Test1.fsx" />
+      <None Include="Test2.fsx" />
+      <None Include="Test2References.fsx" />
+      <None Include="Test3.fsx" />
+    </ItemGroup>
+
+</Project>
