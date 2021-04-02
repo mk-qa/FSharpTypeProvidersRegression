@@ -15,7 +15,6 @@ POSTGRESQL server should be installed (for SQLTypeProviderCore) <br />
    EXPECTED: 
      - There are no errors/redcode in the compatible projects
      - There are errors/redcode for type providers in the incompatible projects
-     - TestCSharp - build failed (has reference to an incompatible project)
 4. Set VS MSBuild in `File | Settings | Build, Execution, Deployment | Toolset and Build`
    EXPECTED:
      - There are no errors/redcode in the incompatible projects
