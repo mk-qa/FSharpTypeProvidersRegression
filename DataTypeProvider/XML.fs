@@ -11,7 +11,7 @@ module TestXML1 =
     printfn "%s (%d)" sampleAlt.Name sampleAlt.Born
 
 module TestXML2 =
-    type Authors = XmlProvider<"samples/test.xml", ResolutionFolder=__SOURCE_DIRECTORY__>
+    type Authors = XmlProvider<"samples/test.xml">
     let topic = Authors.Parse("authors")
 
     printfn "%s" topic.Topic

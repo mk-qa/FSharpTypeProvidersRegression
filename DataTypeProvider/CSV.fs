@@ -4,7 +4,7 @@ open FSharp.Data
 
 //CSV Type Provider
 module TestCVS =
-    type Stocks = CsvProvider<"samples/test.csv", ResolutionFolder=__SOURCE_DIRECTORY__>
+    type Stocks = CsvProvider<"samples/test.csv">
     let msft = Stocks.Load(__SOURCE_DIRECTORY__ + "samples/test.csv").Cache()
     let firstRow = msft.Rows |> Seq.head
     let lastDate = firstRow.Date
