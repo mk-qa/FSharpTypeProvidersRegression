@@ -1,5 +1,4 @@
 F# Support plugin should be installed <br />
-Xamarin plugin should be installed (for project NotificationChannelsFs) <br />
 MSSQL Express server should be installed (for SQLTypeProvider) <br />
    `create database AdventureWorks2017;` <br />
 POSTGRESQL server should be installed (for SQLTypeProviderCore) <br />
@@ -10,7 +9,7 @@ POSTGRESQL server should be installed (for SQLTypeProviderCore) <br />
 
 **TODO:**
 1. Make sure that the "Host Type providers out-of-process" option is selected in `File | Settings | Languages & Frameworks | F#`
-2. Set MSBuild SDK5 in `File | Settings | Build, Execution, Deployment | Toolset and Build`
+2. Set MSBuild SDK in `File | Settings | Build, Execution, Deployment | Toolset and Build`
 3. Open solution <br />
    EXPECTED: 
      - There are no errors/redcode in the compatible projects
@@ -18,12 +17,9 @@ POSTGRESQL server should be installed (for SQLTypeProviderCore) <br />
 4. Set VS MSBuild in `File | Settings | Build, Execution, Deployment | Toolset and Build` <br />
    EXPECTED:
      - There are no errors/redcode in the incompatible projects
-5. Open and build NotificationChannelsFs projects (Make sure that VS MSBuild is selected)<br />
-   EXPECTED:
-     - There are no errors/redcode, build succeeded
-6. Open Test1.fsx/Test2.fsx/Test3.fsx scripts from SupportSharpR project<br />
+5. Open Test1.fsx/Test2.fsx/Test3.fsx scripts from SupportSharpR project<br />
    EXPECTED:
      - There are no errors/redcode
-7. Open UnitTest1.cs from TestCSharpWithFSharp project<br />
+6. Open UnitTest1.cs from TestCSharpWithFSharp project<br />
     EXPECTED:
      - There are no errors/redcode

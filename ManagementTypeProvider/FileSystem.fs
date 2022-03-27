@@ -13,4 +13,3 @@ module TestFileSystem =
     Relative.``..``.files.``test.txt``
     
     let p1 = Registry.HKEY_CURRENT_USER.Path
-    let p2 = Registry.HKEY_LOCAL_MACHINE.SOFTWARE.Microsoft.Path

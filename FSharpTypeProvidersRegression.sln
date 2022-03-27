@@ -28,8 +28,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TODO", "TODO", "{2F2BBFF2-5
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "NotificationChannelsFs", "NotificationChannelsFs\NotificationChannelsFs.fsproj", "{AA3F8FCA-B1FF-4637-A3E6-D9CCE27DB9D4}"
-EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "SQLTypeProviderCore", "SQLTypeProviderCore\SQLTypeProviderCore.fsproj", "{8E5A402E-1247-41DC-A5A0-82DA238DD5BF}"
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "SupportSharpR", "SupportSharpR\SupportSharpR.fsproj", "{9F9C5898-A68E-42B5-AD63-CCBAF8A44EBF}"
@@ -76,10 +74,6 @@ Global
 		{3B1F6CED-E22D-468D-A9FE-D85E7361FDDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3B1F6CED-E22D-468D-A9FE-D85E7361FDDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3B1F6CED-E22D-468D-A9FE-D85E7361FDDC}.Release|Any CPU.Build.0 = Release|Any CPU
-		{AA3F8FCA-B1FF-4637-A3E6-D9CCE27DB9D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AA3F8FCA-B1FF-4637-A3E6-D9CCE27DB9D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AA3F8FCA-B1FF-4637-A3E6-D9CCE27DB9D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{AA3F8FCA-B1FF-4637-A3E6-D9CCE27DB9D4}.Release|Any CPU.Build.0 = Release|Any CPU
 		{8E5A402E-1247-41DC-A5A0-82DA238DD5BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{8E5A402E-1247-41DC-A5A0-82DA238DD5BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8E5A402E-1247-41DC-A5A0-82DA238DD5BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
